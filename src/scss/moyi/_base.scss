@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   重设
+   ========================================================================== */
+
+// 更改盒模型规范
+// 优化字体渲染
+// http://www.feeldesignstudio.com/2013/05/text-rendering
+html {
+  box-sizing: border-box;
+  text-rendering: optimizelegibility;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// IE bug fixed: th 不继承 text-align
+th {
+    text-align: inherit;
+}
+
+// 修正表单元素并不继承父级 font 的问题,并且默认字体设置为雅黑
+// 设置标准参考自：
+// https://github.com/zenozeng/fonts.css
+body, button, input, select, textarea {
+    font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}

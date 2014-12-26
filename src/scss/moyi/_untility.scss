@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.clearfix {
+    @extend %clearfix;
+}
+
+.hide-text{
+    @include hide-text;
+}

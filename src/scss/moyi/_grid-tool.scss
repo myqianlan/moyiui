@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   网格助手
+   ========================================================================== */
+
+@for $i from 1 to $columns {
+
+    @if $is-grid-tool == true {
+        $grid-width: $i / $columns * 100%;
+        .col-#{$i} {
+            width: $grid-width;
+            float: left;
+        }
+        .col-offset-#{$i} {
+            float: left;
+            margin-left: $grid-width;
+        }
+    }
+}
