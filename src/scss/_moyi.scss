@@ -5,7 +5,7 @@
  * 建议使用标准html页面模板
  * @file:     
  * @author:   myqianlan
- * @update:   2014年12月26日11:24:42
+ * @update:   2014年12月30日08:43:49
  * @note:     
  * @doc:      
  */
@@ -26,3 +26,10 @@
 @import "moyi/grid-tool";
 
 // 组件
+@import "moyi/button";
+
+// 图标
+/* http://fontello.com/进行定制 */
+@import "moyi/icon";
+/* 使用font-awesome字体 */
+// @import "fontawesome/font-awesome";

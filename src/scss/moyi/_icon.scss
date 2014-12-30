@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   字体图标
+   http://fontello.com/ 定制
+   ========================================================================== */
+@include font-face("fontello", "../fonts/fontello");
+
+.icon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: fontello;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 16px;
+    /* 优化渲染 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-spin:before { content: '\e800'; } 
+.icon-github:before { content: '\e801'; } 
+.icon-qq:before { content: '\e802'; } 
+.icon-weibo:before { content: '\e803'; } 
+
+.animate-spin {
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
