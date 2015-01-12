@@ -22,8 +22,10 @@ moyi UI
 
 ##图标
 
-/* http://fontello.com/进行定制 */
+http://fontello.com/进行定制 
+
 @import "moyi/icon";
+
 使用font-awesome字体
 
 @import "fontawesome/font-awesome";
