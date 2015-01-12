@@ -540,7 +540,6 @@ body, button, input, select, textarea {
   src: url("../fonts/fontello.eot?#iefix") format("eot"), url("../fonts/fontello.svg#fontello") format("svg"), url("../fonts/fontello.woff") format("woff"), url("../fonts/fontello.ttf") format("truetype"); }
 
 .icon {
-  speak: none;
   position: relative;
   top: 1px;
   display: inline-block;
