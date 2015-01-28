@@ -3,7 +3,7 @@
 /* ==========================================================================
    按钮
    ========================================================================== */
-$btn-color-default: #d9534f !default;
+$btn-color-default: #a0a0a0 !default;
 $btn-color-black: #3d4450 !default;
 
 @mixin btn-style($bg: $btn-color-default) {
