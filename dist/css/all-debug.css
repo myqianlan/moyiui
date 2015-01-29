@@ -480,7 +480,7 @@ body, button, input, select, textarea {
   -ms-user-select: none;
   user-select: none;
   display: inline-block;
-  background-color: #d9534f;
+  background-color: #a0a0a0;
   color: #fff;
   text-align: center;
   padding: 0 20px;
@@ -492,10 +492,10 @@ body, button, input, select, textarea {
   width: auto;
   text-decoration: none; }
   .btn:hover, .btn:focus, .btn.focus {
-    background-color: #b52927; }
+    background-color: #7a7a7a; }
   .btn:active, .btn.active {
     outline: 0;
-    background-color: #b52927;
+    background-color: #7a7a7a;
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.62); }
   .btn.disabled, .btn[disabled] {
     cursor: not-allowed;
@@ -527,6 +527,58 @@ body, button, input, select, textarea {
   padding: 0 30px;
   font-size: 16px; }
 
+/* ==========================================================================
+   表单
+   ========================================================================== */
+input, select, textarea {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px; }
+
+input:focus, select:focus, textarea:focus {
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  border-color: #129FEA; }
+
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 1px auto #129FEA; }
+
+.checkbox, .radio {
+  margin: 0.5em 0;
+  display: block; }
+
+input[disabled], select[disabled], textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3; }
+
+select {
+  border: 1px solid #ccc;
+  background-color: white; }
+
+select[multiple] {
+  height: auto; }
+
+label {
+  margin: 0.5em 0 0.2em; }
+
+fieldset {
+  margin: 0;
+  padding: 0.35em 0 0.75em;
+  border: 0; }
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5; }
+
 /* http://fontello.com/进行定制 */
 /* ==========================================================================
    字体图标
@@ -540,6 +592,7 @@ body, button, input, select, textarea {
   src: url("../fonts/fontello.eot?#iefix") format("eot"), url("../fonts/fontello.svg#fontello") format("svg"), url("../fonts/fontello.woff") format("woff"), url("../fonts/fontello.ttf") format("truetype"); }
 
 .icon {
+  speak: none;
   position: relative;
   top: 1px;
   display: inline-block;
