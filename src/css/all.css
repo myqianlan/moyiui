@@ -582,6 +582,22 @@ legend {
   color: #333;
   border-bottom: 1px solid #e5e5e5; }
 
+.fileinput {
+  position: relative;
+  height: 36px;
+  line-height: 36px; }
+  .fileinput input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    direction: ltr;
+    cursor: default;
+    height: 100%;
+    width: 100%; }
+
 /* http://fontello.com/进行定制 */
 /* ==========================================================================
    字体图标

@@ -547,9 +547,11 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   outline: thin dotted #333;
   outline: 1px auto #129FEA; }
 
-.checkbox, .radio {
-  margin: 0.5em 0;
-  display: block; }
+input[type="radio"], input[type="checkbox"] {
+  margin: 0.4em 0 0.5em;
+  vertical-align: middle;
+  height: 1em;
+  width: 1em; }
 
 input[disabled], select[disabled], textarea[disabled] {
   cursor: not-allowed;
@@ -564,7 +566,8 @@ select[multiple] {
   height: auto; }
 
 label {
-  margin: 0.5em 0 0.2em; }
+  margin: 0.5em 0 0.2em;
+  display: inline-block; }
 
 fieldset {
   margin: 0;
