@@ -14,15 +14,18 @@ moyi UI
 ##网格
 
 @import "moyi/grid";
+
 @import "moyi/grid-tool";
 
 ##组件
 
 @import "moyi/button";
 
+@import "moyi/form";
+
 ##图标
 
-http://fontello.com/进行定制 
+http://fontello.com/ 进行定制 
 
 @import "moyi/icon";
 
