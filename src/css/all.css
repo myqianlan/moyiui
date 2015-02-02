@@ -341,6 +341,24 @@ td, th {
 /* ==========================================================================
    重设
    ========================================================================== */
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, p, blockquote, figure, hr, menu, dir, thead, tbody, tfoot {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style-type: none;
+  list-style-image: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+img {
+  width: auto\9;
+  vertical-align: top; }
+
+a {
+  text-decoration: none; }
+
 html {
   box-sizing: border-box;
   text-rendering: optimizelegibility; }
@@ -348,11 +366,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body {
+  font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif; }
+
 th {
   text-align: inherit; }
-
-body, button, input, select, textarea {
-  font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif; }
 
 .hide-text {
   text-indent: 100%;
@@ -530,14 +548,17 @@ body, button, input, select, textarea {
 /* ==========================================================================
    表单
    ========================================================================== */
-input, select, textarea {
+input:not([type="button"]), select, textarea {
   padding: 0.5em 0.6em;
   display: inline-block;
   border: 1px solid #ccc;
   box-shadow: inset 0 1px 3px #ddd;
   border-radius: 4px; }
 
-input:focus, select:focus, textarea:focus {
+select {
+  padding: 0.35em 0.6em; }
+
+input:not([type="button"]):focus, select:focus, textarea:focus {
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
@@ -553,10 +574,14 @@ input[type="radio"], input[type="checkbox"] {
   height: 1em;
   width: 1em; }
 
-input[disabled], select[disabled], textarea[disabled] {
+input:not([type="button"])[disabled], select[disabled], textarea[disabled] {
   cursor: not-allowed;
   background-color: #eaeded;
   color: #cad2d3; }
+
+textarea {
+  overflow: auto;
+  resize: vertical; }
 
 select {
   border: 1px solid #ccc;

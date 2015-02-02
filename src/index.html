@@ -22,7 +22,7 @@
     <!-- CONTENT -->
     <style>
     body{
-        text-align: center;
+        /*text-align: center;*/
     }
     section{
         margin-bottom: 20px;
@@ -81,7 +81,7 @@
         <h1>Button</h1>
         <input type="button" value="moyi" class="btn btn-large active">
         <input type="button" value="moyi" class="btn btn-large">
-        <button class="btn btn-black">moyi</button>
+        <button class="btn btn-black"><i class="icon icon-spin animate-spin"></i> moyi</button>
         <a href="javascript:;" class="btn btn-small disabled">moyi</a>
     </section>
     <section class="icon">
@@ -94,32 +94,39 @@
     <fieldset>
         <legend>Form</legend>
 
-        <label for="email">Email</label>
-        <input id="email" type="email" class="moyi" placeholder="Email">
+        <label for="email">Email</label><br>
+        <input id="email" type="email" class="moyi" placeholder="Email"><br>
 
-        <label for="password">Password</label>
-        <input id="password" type="password" placeholder="Password">
+        <label for="password">Password</label><br>
+        <input id="password" type="password" placeholder="Password"><br>
 
-        <label for="state">State</label>
+        <label for="state">State</label><br>
         <select id="state">
-            <option>AL</option>
-            <option>CA</option>
-            <option>IL</option>
+            <option>走走停停</option>
+            <option>不忘初心</option>
+            <option>这是一个不能停留太久的世界</option>
         </select>
+        <br>
 
         <label for="remember" class="checkbox">
             <input id="remember" type="checkbox"> Remember me
-        </label>
+        </label><br>
         <label for="remember" class="radio">
-            <input id="remember" type="checkbox"> 1
-            <input id="remember" type="checkbox"> 2
-            <input id="remember" type="checkbox"> 3
+            <input id="remember" name="hehe" type="radio"> 1
+            <input id="remember" name="hehe" type="radio"> 2
+            <input id="remember" name="hehe" type="radio"> 3
         </label>
+        <br>
         <div class="fileinput btn">
         <i class="icon icon-qq"></i>
-        <span>Add files...</span>
+        <span> Add files...</span>
             <input type="file" name="files[]" multiple="">
         </div>
+        <br>
+        <label for="state">intro</label>
+        <br>
+        <textarea name="aa" id="" cols="30" rows="10" placeholder="我是这耀眼的瞬间,是划过天边的刹那火焰;我为你来看我不顾一切，我将熄灭永不能再回来。"></textarea>
+        <br>
         <input type="submit" class="pure-button pure-button-primary" value="Sign in">
     </fieldset>
 </form>
