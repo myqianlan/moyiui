@@ -69,7 +69,21 @@ String.prototype.endWith = function(s) {
 function HtmlEncode(text) {
     return text.replace(/&/g, '&').replace(/\"/g, '"').replace(/</g, '<').replace(/>/g, '>')
 }
-
+// 获取URL参数值
+function getUrlParam(name)
+{
+var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); 
+var r = window.location.search.substr(1).match(reg);  
+if (r!=null) return unescape(r[2]); return null; 
+}
+function getRootPath() {
+        var curWwwPath = window.document.location.href;
+        var pathName = window.document.location.pathname;
+        var pos = curWwwPath.indexOf(pathName);
+        var localhostPath = curWwwPath.substring(0, pos);
+        var projectName = pathName.substring(0, pathName.substr(1).indexOf('/') + 1);
+        return localhostPath;
+    }
 // 时间日期格式转换
 Date.prototype.Format = function(formatStr) {
     var str = formatStr;
