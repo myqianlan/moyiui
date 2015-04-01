@@ -7,6 +7,7 @@ input{
     padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid #ccc;
+    transition: all 0.3s;
 }
 input:not([type="button"]),
 select,
