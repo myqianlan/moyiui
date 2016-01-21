@@ -8,6 +8,7 @@ input{
     display: inline-block;
     border: 1px solid #ccc;
     transition: all 0.3s;
+    line-height: 1;
 }
 input:not([type="button"]),
 select,
